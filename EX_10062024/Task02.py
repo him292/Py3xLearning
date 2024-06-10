@@ -13,5 +13,5 @@ num1 = float(input("Enter your first number: "))
 num2 = float(input("Enter your second number: "))
 num3 = float(input("Enter your third number: "))
 
-print(num1 if num1 > num2 else num2 if num2 > num1 else "Both numbers are equal")
-print(num1 if num1 > num3 else num3 if num3 > num1 else "Both numbers are equal")
+print(f" {num1} {'greater than' if num1 > num2 else 'is less than' if num2 > num1 else 'is equal to '} {num2}")
+print(f" {num1} {'greater than' if num1 > num3 else 'is less than' if num3 > num1 else 'is equal to '} {num3}")
