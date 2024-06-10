@@ -49,7 +49,7 @@ print(a <= b) # or operator
 print(a == b) # and operator
 print(a != b) # not operator
 
-# itenary operator
+# Ternary operator
 
 a = 10
 b = 20
