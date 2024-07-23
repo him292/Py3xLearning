@@ -6,6 +6,7 @@ def difference_encapsulation_abstraction():
     print("Encapsulation is a mechanism to encapsulate or wrap the data and functions into a single unit (class).")
     print("Abstraction is a mechanism to hide the implementation details and only show the functionality to the users.")
 
+#Abstraction
 
 from abc import ABC, abstractmethod
 # from "folder name" import "class or methods" -  this is to get the data from other files
