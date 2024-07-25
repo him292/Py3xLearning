@@ -165,7 +165,8 @@ How to run a collection using Newman (Commandline):
 - Create a repository where we'll keep our SOAP requests
   - copy the collection link from Postman (From Share command)
   - paste this command in Newman command line and then reporting type you want
-    - Ex: newman run "https://api.postman.com/collections/37172451-68867e89-3f45-4839-aa85-9b9081e5aead?access_key=PMAT-01J3HWDWHPYR4W3KVQ5GY9Z4C8" -r cli,htmlextra
+
+[//]: # (    - Ex: newman run "https://api.postman.com/collections/37172451-68867e89-3f45-4839-aa85-9b9081e5aead?access_key=PMAT-01J3HWDWHPYR4W3KVQ5GY9Z4C8" -r cli,htmlextra)
   - Now to open the html report, run the below command:
     - open "/Users/datashan/Desktop/PostmanRepo/SOAPDemo/newman/API Testing - SOAP Project 1-2024-07-24-08-25-37-142-0.html"
 
