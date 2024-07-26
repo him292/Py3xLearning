@@ -62,3 +62,13 @@ command: pytest -m "smoke" Ex_26072024/test_022.py
 ## Install JDK and then set variable as below
 export JAVA_HOME=$(/usr/libexec/java_home)
 export PATH=$JAVA_HOME/bin:$PATH
+
+## 27 July 24
+
+### API Automation using REQUEST module
+
+- How to install request module
+pip install requests
+
+- to see the print statement's output within the console, add "-s" at the end:
+- pytest Ex_26072024/test_request_023.py --alluredir=allure_result -s
