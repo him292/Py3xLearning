@@ -73,5 +73,3 @@ def test_get_single_request_by_id_Negative():
     print(type(payload))
 
     assert response.status_code == 500, "Status code is 500"
-
-

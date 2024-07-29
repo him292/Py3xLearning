@@ -72,3 +72,27 @@ pip install requests
 
 - to see the print statement's output within the console, add "-s" at the end:
 - pytest Ex_26072024/test_request_023.py --alluredir=allure_result -s
+
+## Decorators in Python
+
+When a function is decorated with @pytest.fixture, pytest treats it as a fixture function. This function can then be used in test cases by listing it as an argument to the test function. pytest will automatically call the fixture function and pass its return value as an argument to the test function.
+Here's a simple example to illustrate how fixtures work:
+
+import pytest
+
+@pytest.fixture()
+def setup_data():
+    data = [1, 2, 3]
+    return data
+
+def test_sum(setup_data):
+    assert sum(setup_data) == 6
+
+In this example, the setup_data function is decorated with @pytest.fixture(). This function returns a list of numbers 
+[1, 2, 3]
+The test_sum function takes setup_data as an argument, which pytest automatically provides by calling the setup_data fixture function.
+Fixtures can also have scope, which determines when the fixture is created and destroyed. The scope can be set using the 
+scope parameter in the decorator, e.g., @pytest.fixture(scope="module"). The available scopes are function(default), class , module , package , and session
+
+
+
