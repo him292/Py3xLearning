@@ -1,0 +1,7 @@
+# so now, .env is secure, because we can add all those files which we want to make secured
+# whatever files we add here will be ignored by GIT when committing
+
+# why we want to secure .env file -> bcz it contains senstive info
+# if there is normal info, then store it in "testdata.csv" file
+
+.env

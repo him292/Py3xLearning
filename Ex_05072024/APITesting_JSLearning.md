@@ -73,7 +73,7 @@ pip install requests
 - to see the print statement's output within the console, add "-s" at the end:
 - pytest Ex_26072024/test_request_023.py --alluredir=allure_result -s
 
-## Decorators in Python
+## Decorators/Fixtures in Python
 
 When a function is decorated with @pytest.fixture, pytest treats it as a fixture function. This function can then be used in test cases by listing it as an argument to the test function. pytest will automatically call the fixture function and pass its return value as an argument to the test function.
 Here's a simple example to illustrate how fixtures work:
@@ -94,5 +94,15 @@ The test_sum function takes setup_data as an argument, which pytest automaticall
 Fixtures can also have scope, which determines when the fixture is created and destroyed. The scope can be set using the 
 scope parameter in the decorator, e.g., @pytest.fixture(scope="module"). The available scopes are function(default), class , module , package , and session
 
+==================================================================================
+26 July
 
+If we want to modularize our code, (Setup and Teardown) methods, we should move them within the conftest.py file, so that
+these methods are available to the whole project'
+- No need to import conftest file within your project to use the methods within it
+- Python automatically realizes the conftest file before running any program
+
+
+### When adding sensitive information, store it in ".env" file, if generic info, then store it in "testdata.csv" which
+### can be later used to run your tests
 
