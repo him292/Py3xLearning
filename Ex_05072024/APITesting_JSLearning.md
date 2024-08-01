@@ -106,3 +106,26 @@ these methods are available to the whole project'
 ### When adding sensitive information, store it in ".env" file, if generic info, then store it in "testdata.csv" which
 ### can be later used to run your tests
 
+
+## Types of Authorizations (In Market) : AUths are nothing but keys to use the API
+- Digest Auth: Its like username/password in encrypted format (Where encryption is SHA 256 or MD5)
+- Oauth 1.0: Old Auth -> if you wnt to allow thrd party to access the details of the data
+- Oauth 2.0: watch https://courses.thetestingacademy.com/courses/sdet-club-masterclasses-1337/contents/64e9aa6d41dc4
+
+## API Testing Framework
+
+Framework: 
+
+Types:
+- Linear Automation Framework: Record and playback -> simple framework, where we'll not maintain test cases execution Ex: Selenium IDE
+- Modular Framework: it divides the test scripts into small modules where modules are small scripts writton to perform certain tasks
+- Data driven framework: allows testers to inpit a single test script that can execute tests for all test data from a table and expect the test iutput in the same table
+  - This framework allows testers to run the same test case with multiple sets of data stored externally (Ex excel or csv file)
+- Keyword driven framework: This uses keywords defined in an external file (like an excel sheet) to execute test cases. Each keyword corresponds to a specific action in the application
+- Behaviour driven framework (BDD): emphasizes xollabroation amons devs, testers and BAs by using natural language to define test cases
+  - Given , when , then (Gherkin syntax)
+  - TestRunner - means which feature file belongs to which step
+- Hybrid testing framework: combination of modular+DDT+keyword)
+  - it can incorporate aspects of DDT and KDF
+  - Pros: offer flexibility and adaptability to diff testing needs; maximize code reuse
+  - cons: can increase automation effort due to scriptings
