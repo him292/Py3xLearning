@@ -55,4 +55,30 @@ Ex: in the restful booker example
 - to update a booking, we're creating a booking a getting the ID from there
 - then, we're creaing a token (for Auth) to be used within the PUT request
 - then, we're able to update the booking (using token and bookingID as VARIABLES)
-  - Just like within python, we use decorators/fixtures to use the "token & bookingiD" within the update function 
+  - Just like within python, we use decorators/fixtures to use the "token & bookingiD" within the update function
+
+### OAuth 2.0 
+- Its an authorization protocol that gives an API client limited access to user data on a web server.
+  - GitHub, Google and GB APIs notable use it
+There are other two Auths:
+  - Where Basic Auth has username/Password + Base 64
+  - And Digest Auth has Username/password + SHA256/MD5 algos (which is more secure - who knows the key only can decode the algo)
+  - API Key Auth - has a key to authorize the access. If someone has that key, can decode only
+  - Bearer Token - is a unique random string (only server can recognize)
+
+Difference between Cookie, API key, bearer token
+
+- Cookie: saved in client side
+  - key value pair
+  - has a expiry date
+  - set cookie method is used
+- API Key: a unique string
+  - server generated
+  - No real value
+  - Developer/server will provide
+- Bearer token: Random string
+  - Have expiry
+  - Server provides
+- JWT(JSON web token): contain some data about client
+- OAuth 2.0: provides key to access
+  - 
